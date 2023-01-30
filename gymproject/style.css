@@ -1,0 +1,907 @@
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Nunito:wght@200;400;500;700&Display=Swap");
+/* Base */
+:Root {
+  --Clr-Primary: #29a396;
+}
+
+*,
+*::After,
+*::Before {
+  Box-Sizing: Border-Box;
+  Padding: 0;
+  Margin: 0;
+  Font-Family: "Nunito", Sans-Serif;
+}
+
+Html {
+  Scroll-Behavior: Smooth;
+}
+
+Body {
+  Width: 100%;
+  Min-Height: 100vh;
+  Background:lightblue;
+  Color: #Fff;
+  Overflow-X: Hidden;
+  margin-left: 60px;
+}
+
+.Container {
+  Width: 80%;
+  Margin: 0 Auto;
+}
+
+.Flex {
+  Display: Flex;
+  Align-Items: Center;
+  Justify-Content: Center;
+}
+
+.Header,
+.Section {
+  Width: 100%;
+  Padding: 40px 0;
+  Overflow: Hidden;
+}
+
+.Header::After,
+.Header::Before,
+.Section::After,
+.Section::Before {
+  Content: "";
+  Background: Url(Https://Raw.Githubusercontent.Com/Programmercloud/Pgc-Gym/Main/Img/Blur-1.Png);
+  Position: Absolute;
+  Width: 400px;
+  Height: 400px;
+  Background-Position: Center;
+  Background-Repeat: No-Repeat;
+  Background-Size: Contain;
+  Bottom: 0;
+}
+
+.Header::After {
+  Left: -200px;
+}
+
+.Header::Before {
+  Right: -200px;
+}
+
+.Mb {
+  Margin-Bottom: 30px;
+}
+
+.Mt {
+  Margin-Top: 20px;
+}
+
+.Section {
+  Background: #1d1f1e;
+  Position: Relative;
+  Padding: 80px 0;
+}
+
+.Section::After {
+  Left: -200px;
+}
+
+.Section::Before {
+  Width: 600px;
+  Right: -200px;
+}
+
+.Section:nth-Child(Even) {
+  Background: #141615;
+}
+
+.Section:nth-Child(Even)::After,
+.Section:nth-Child(Even)::Before {
+  Display: None;
+}
+
+.Primary {
+  Font-Size: 35px;
+  Font-Weight: 700;
+}
+
+.Secondary {
+  Font-Size: 25px;
+  Font-Weight: 700;
+}
+
+.Tertiary {
+  Font-Size: 15px;
+}
+/* End Base */
+
+/* Menu */
+.Menu {
+  Width: 100%;
+  Background: Linear-Gradient(To Right, #0e0e0e 70%, #142d2a);
+  Padding: 12px 0;
+}
+
+.Menu .Container {
+  Justify-Content: Space-Between;
+}
+
+.Mobile-Btn {
+  Display: None;
+}
+
+.Logo {
+  Cursor: Pointer;
+}
+
+.Logo Img {
+  Width: 80px;
+  Height: Auto;
+}
+
+.Nav {
+  List-Style: None;
+}
+
+.Nav-Item {
+  Display: Inline-Block;
+  Margin-Right: 30px;
+  Font-Size: 18px;
+  Font-Weight: 400;
+}
+
+.Nav-Item A {
+  Text-Decoration: None;
+  Color: #Fff;
+}
+
+.Nav-Item:hover A {
+  Color: #29a396;
+  Transition: 0.3s Linear;
+}
+
+.Nav-Item:last-Of-Type {
+  Margin-Right: 0;
+}
+/* End Menu */
+
+/* Buttons */
+.Btn {
+  Padding: 10px 28px;
+  Background: Var(--Clr-Primary);
+  Border-Radius: 40px;
+  Font-Size: 20px;
+  Font-Weight: 400;
+  Text-Decoration: None;
+  Color: #Fff;
+  Display: Inline-Block;
+}
+
+.Btn:hover {
+  Background: #165f56;
+  Transition: 0.3s Linear;
+}
+
+.Btn-2 {
+  Font-Size: 35px;
+  Text-Decoration: None;
+  Color: #Ccc;
+  Transition: 0.3s Linear;
+}
+
+.Btn-2:Hover {
+  Color: #29a396;
+}
+
+/* End Buttons */
+
+/* Header */
+.Text {
+  Width: 60%;
+}
+
+.Visual {
+  Width: 40%;
+}
+
+.Visual Img {
+  Width: 100%;
+}
+
+.Header H1 {
+  Font-Size: 70px;
+  Font-Weight: 700;
+}
+
+.Header H1 Span {
+  Color: Var(--Clr-Primary);
+}
+/* End Header */
+
+.Section:nth-Child(Even) .Visual {
+  Margin-Right: 30px;
+}
+
+/* Trainer */
+#Trainer {
+  Text-Align: Center;
+}
+
+.Trainer Img {
+  Border-Top-Left-Radius: 80px;
+  Border-Top-Right-Radius: 20px;
+  Border-Bottom-Right-Radius: 80px;
+  Border-Bottom-Left-Radius: 20px;
+  Margin-Bottom: 10px;
+  Outline: 2px Solid #Fff;
+  Padding: 14px;
+}
+
+.Trainer .Mb {
+  Margin-Bottom: 10px;
+}
+/* End Trainer */
+
+/* Testimonial */
+#Testimonial .Visual Img {
+  Width: 90%;
+  Display: Block;
+  Margin-Left: Auto;
+}
+
+.Client {
+  Background: #Fff;
+  Color: #000;
+  Padding: 20px 10px;
+  Margin-Right: 20px;
+  Text-Align: Center;
+  Border-Radius: 20px;
+  Position: Relative;
+  Margin-Top: 20px;
+}
+
+.Client Img {
+  Width: 80px;
+  Height: 80px;
+  Border-Radius: 50%;
+  Position: Absolute;
+  Top: -40px;
+  Left: Calc(50% - 40px);
+}
+
+.Client H2 {
+  Margin: 20px 0 10px 0;
+}
+/* End Testimonial */
+
+/* Discount */
+#Discount {
+  Padding: 40px 0;
+}
+/* End  Discount */
+
+/* Footer */
+.Footer {
+  Padding: 30px 0;
+  Border-Top: 1px Solid #Fff;
+  Text-Align: Center;
+}
+/* End Footer */
+
+/* Responsive */
+
+@Media (Max-Width: 768px) {
+  .Flex {
+    Flex-Direction: Column;
+    Text-Align: Center;
+  }
+
+  .Mobile-Btn {
+    Display: Block;
+    Font-Size: 35px;
+    Cursor: Pointer;
+    Position: Absolute;
+    Right: 20px;
+    Top: 12px;
+  }
+
+  .Menu.Active .Nav-Item {
+    Display: Block;
+    Margin: 30px 0;
+  }
+
+  .Nav,
+  .Menu .Btn {
+    Display: None;
+  }
+
+  .Menu.Active .Nav,
+  .Menu.Active .Btn {
+    Display: Block;
+  }
+
+  .Menu.Active {
+    Padding: 30px 0;
+    Width: 100%;
+    Transition: All 0.8s Ease;
+  }
+
+  .Text,
+  .Visual {
+    Width: 100%;
+    Margin-Bottom: 20px;
+  }
+
+  .Text H1 {
+    Font-Size: 45px;
+  }
+
+  .Primary {
+    Font-Size: 28px;
+  }
+
+  .Secondary {
+    Font-Size: 22px;
+  }
+
+  .Tertiary {
+    Font-Size: 14px;
+  }
+
+  .Trainer {
+    Margin-Bottom: 20px;
+  }
+
+  .Client {
+    Margin-Bottom: 50px;
+  }
+
+  #Discount .Visual Img {
+    Width: 70%;
+    Margin-Bottom: 30px;
+  }
+}
+
+@Media (Max-Width: 530px) {
+  .Header::After,
+  .Header::Before,
+  .Section::After,
+  .Section::Before {
+    Display: None;
+  }
+
+  .Primary {
+    Font-Size: 25px;
+  }
+
+  .Secondary {
+    Font-Size: 20px;
+  }
+
+  .Tertiary {
+    Font-Size: 12px;
+  }
+
+  .Text H1 {
+    Font-Size: 34px;
+  }
+
+  .Btn,
+  .Btn-2 {
+    Font-Size: 16px;
+  }
+}
+
+/* End Responsive */
+@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Nunito:wght@200;400;500;700&Display=Swap");
+/* Base */
+:Root {
+  --Clr-Primary: #29a396;
+}
+
+*,
+*::After,
+*::Before {
+  Box-Sizing: Border-Box;
+  Padding: 0;
+  Margin: 0;
+  Font-Family: "Nunito", Sans-Serif;
+}
+
+Html {
+  Scroll-Behavior: Smooth;
+}
+
+Body {
+  Width: 100%;
+  Min-Height: 100vh;
+  Background: Radial-Gradient(#111, #071a1a);
+  Color: #Fff;
+  Overflow-X: Hidden;
+}
+
+.Container {
+  Width: 80%;
+  Margin: 0 Auto;
+}
+
+.Flex {
+  Display: Flex;
+  Align-Items: Center;
+  Justify-Content: Center;
+}
+
+.Header,
+.Section {
+  Width: 100%;
+  Padding: 40px 0;
+  Overflow: Hidden;
+}
+
+.Header::After,
+.Header::Before,
+.Section::After,
+.Section::Before {
+  Content: "";
+  Background: Url(Https://Raw.Githubusercontent.Com/Programmercloud/Pgc-Gym/Main/Img/Blur-1.Png);
+  Position: Absolute;
+  Width: 400px;
+  Height: 400px;
+  Background-Position: Center;
+  Background-Repeat: No-Repeat;
+  Background-Size: Contain;
+  Bottom: 0;
+}
+
+.Header::After {
+  Left: -200px;
+}
+
+.Header::Before {
+  Right: -200px;
+}
+
+.Mb {
+  Margin-Bottom: 30px;
+}
+
+.Mt {
+  Margin-Top: 20px;
+}
+
+.Section {
+  Background: #1d1f1e;
+  Position: Relative;
+  Padding: 80px 0;
+}
+
+.Section::After {
+  Left: -200px;
+}
+
+.Section::Before {
+  Width: 600px;
+  Right: -200px;
+}
+
+.Section:nth-Child(Even) {
+  Background: #141615;
+}
+
+.Section:nth-Child(Even)::After,
+.Section:nth-Child(Even)::Before {
+  Display: None;
+}
+
+.Primary {
+  Font-Size: 35px;
+  Font-Weight: 700;
+}
+
+.Secondary {
+  Font-Size: 25px;
+  Font-Weight: 700;
+}
+
+.Tertiary {
+  Font-Size: 15px;
+}
+/* End Base */
+/* Menu */
+.Menu {
+  Width: 100%;
+  Background: Linear-Gradient(To Right, #0e0e0e 70%, #142d2a);
+  Padding: 12px 0;
+}
+
+.Menu .Container {
+  Justify-Content: Space-Between;
+}
+
+.Mobile-Btn {
+  Display: None;
+}
+
+.Logo {
+  Cursor: Pointer;
+}
+
+.Logo Img {
+  Width: 80px;
+  Height: Auto;
+}
+
+.Nav {
+  List-Style: None;
+}
+
+.Nav-Item {
+  Display: Inline-Block;
+  Margin-Right: 30px;
+  Font-Size: 18px;
+  Font-Weight: 400;
+}
+
+.Nav-Item A {
+  Text-Decoration: None;
+  Color: #Fff;
+}
+
+.Nav-Item:hover A {
+  Color: #29a396;
+  Transition: 0.3s Linear;
+}
+
+.Nav-Item:last-Of-Type {
+  Margin-Right: 0;
+}
+/* End Menu */
+* Buttons */
+.Btn {
+  Padding: 10px 28px;
+  Background: Var(--Clr-Primary);
+  Border-Radius: 40px;
+  Font-Size: 20px;
+  Font-Weight: 400;
+  Text-Decoration: None;
+  Color: #Fff;
+  Display: Inline-Block;
+}
+
+.Btn:hover {
+  Background: #165f56;
+  Transition: 0.3s Linear;
+}
+
+.Btn-2 {
+  Font-Size: 35px;
+  Text-Decoration: None;
+  Color: #Ccc;
+  Transition: 0.3s Linear;
+}
+
+.Btn-2:Hover {
+  Color: #29a396;
+}
+
+/* End Buttons */
+
+/* Header */
+.Text {
+  Width: 60%;
+}
+
+.Visual {
+  Width: 40%;
+}
+
+.Visual Img {
+  Width: 100%;
+}
+
+.Header H1 {
+  Font-Size: 70px;
+  Font-Weight: 700;
+}
+
+.Header H1 Span {
+  Color: Var(--Clr-Primary);
+}
+/* End Header */
+
+.Section:nth-Child(Even) .Visual {
+  Margin-Right: 30px;
+}
+Styling Trainer & Testimonial Section:
+
+The Majority Of What We Added To Our Trainer And Testimonial Are Images, So We Will Now Style Our Testimonial Using The Id Selector (#Trainer). We’ll Align The Text To The “Center” And Add Borders With Radii Of 80 Pixels On The Left And Right And 20 Pixels On The Top And Bottom Using The Tag Selector (Img).
+
+Restaurant Website Using HTML And CSS
+
+The Styling Will Also Be Added To The Images, And We Will Use The Class Selector To Set The Margin To The Left, Display To Block, And Width To 90%.
+
+/* Trainer */
+#Trainer {
+  Text-Align: Center;
+}
+
+.Trainer Img {
+  Border-Top-Left-Radius: 80px;
+  Border-Top-Right-Radius: 20px;
+  Border-Bottom-Right-Radius: 80px;
+  Border-Bottom-Left-Radius: 20px;
+  Margin-Bottom: 10px;
+  Outline: 2px Solid #Fff;
+  Padding: 14px;
+}
+
+.Trainer .Mb {
+  Margin-Bottom: 10px;
+}
+/* End Trainer */
+
+/* Testimonial */
+#Testimonial .Visual Img {
+  Width: 90%;
+  Display: Block;
+  Margin-Left: Auto;
+}
+
+.Client {
+  Background: #Fff;
+  Color: #000;
+  Padding: 20px 10px;
+  Margin-Right: 20px;
+  Text-Align: Center;
+  Border-Radius: 20px;
+  Position: Relative;
+  Margin-Top: 20px;
+}
+
+.Client Img {
+  Width: 80px;
+  Height: 80px;
+  Border-Radius: 50%;
+  Position: Absolute;
+  Top: -40px;
+  Left: Calc(50% - 40px);
+}
+
+.Client H2 {
+  Margin: 20px 0 10px 0;
+}
+/* End Testimonial */
+/* Footer */
+.Footer {
+  Padding: 30px 0;
+  Border-Top: 1px Solid #Fff;
+  Text-Align: Center;
+}
+/* End Footer */
+
+/* Responsive */
+
+@Media (Max-Width: 768px) {
+  .Flex {
+    Flex-Direction: Column;
+    Text-Align: Center;
+  }
+
+  .Mobile-Btn {
+    Display: Block;
+    Font-Size: 35px;
+    Cursor: Pointer;
+    Position: Absolute;
+    Right: 20px;
+    Top: 12px;
+  }
+
+  .Menu.Active .Nav-Item {
+    Display: Block;
+    Margin: 30px 0;
+  }
+
+  .Nav,
+  .Menu .Btn {
+    Display: None;
+  }
+
+  .Menu.Active .Nav,
+  .Menu.Active .Btn {
+    Display: Block;
+  }
+
+  .Menu.Active {
+    Padding: 30px 0;
+    Width: 100%;
+    Transition: All 0.8s Ease;
+  }
+
+  .Text,
+  .Visual {
+    Width: 100%;
+    Margin-Bottom: 20px;
+  }
+
+  .Text H1 {
+    Font-Size: 45px;
+  }
+
+  .Primary {
+    Font-Size: 28px;
+  }
+
+  .Secondary {
+    Font-Size: 22px;
+  }
+
+  .Tertiary {
+    Font-Size: 14px;
+  }
+
+  .Trainer {
+    Margin-Bottom: 20px;
+  }
+
+  .Client {
+    Margin-Bottom: 50px;
+  }
+
+  #Discount .Visual Img {
+    Width: 70%;
+    Margin-Bottom: 30px;
+  }
+}
+
+@Media (Max-Width: 530px) {
+  .Header::After,
+  .Header::Before,
+  .Section::After,
+  .Section::Before {
+    Display: None;
+  }
+
+  .Primary {
+    Font-Size: 25px;
+  }
+
+  .Secondary {
+    Font-Size: 20px;
+  }
+
+  .Tertiary {
+    Font-Size: 12px;
+  }
+
+  .Text H1 {
+    Font-Size: 34px;
+  }
+
+  .Btn,
+  .Btn-2 {
+    Font-Size: 16px;
+  }
+}
+
+/* End Responsive */
+
+
+
+/*Registration css*/
+#contact{
+    position: relative;
+    height: 800px;
+
+}
+#contact::before{
+    content: "";
+    background-image: url(../img/pic4.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 800px;
+    width: 1536px;
+    background-size: 100% 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+    border: 2px solid gray;
+    padding:80px;
+    
+}
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#contact-box input{
+    
+    padding:0.8rem; 
+    text-align: center; 
+    width: 800px;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+#contact-box textarea{
+    width: 800px;
+    padding:0.8rem;
+    text-align: center;
+    border:2px solid blue;
+    border-radius: 10px;
+
+}
+.form-group{
+    
+    padding-bottom:28px
+}
+.h-primary{
+    margin-top: 70px;
+    font-size: 3rem;
+    padding: 10px;
+    font-family: 'Mandali', sans-serif;
+    text-align: center;
+
+}
+
+
+// booking page
+.container {
+background-color: #fafafa;
+margin: 200px;
+box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+display: grid;
+
+}
+.container-time {
+background-color:blue;
+padding: 50px;
+outline: 3px dashed #998100;
+outline-offset: -30px;
+text-align: center;
+}
+.heading {
+font-size: 35px;
+text-transform: uppercase;
+}
+.heading-days {
+color:#998100;
+font-size: 30px;
+}
+.heading-phone {
+font-size: 20px;
+}
+.container-form {
+padding: 20px 0;
+margin: 0 auto;
+color: #000;
+}
+form {
+display: grid;
+grid-row-gap: 20px;
+}
+form p {
+font-weight: 600;
+}
+.form-field {
+display: flex;
+justify-content: space-between;
+}
+input,select {
+padding: 10px 15px;
+}
+.btn{
+    padding:10px 20px;
+    border:2px solid yellowgreen;
+     border-radius: 20px ;
+     
+
+     margin-top: 20px;
+     font-size: 16px;
+    
+}
+

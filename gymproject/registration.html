@@ -1,0 +1,42 @@
+ <Html Lang="En">
+<!DOCTYPE Html>
+
+<Head>
+    <Meta Charset="UTF-8" />
+    <Meta Http-Equiv="X-UA-Compatible" Content="IE=Edge" />
+    <Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0" />
+    <Title>Registration page</Title>
+   
+    <Link Rel="Stylesheet" Href="style.Css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Mandali&display=swap" rel="stylesheet">
+</Head>
+
+<Body>
+ <section id="contact">
+
+         <h1 class="h-primary center">Welcome to the registration page</h1>
+         <div id="contact-box">
+        <form action=noaction.php id="form">
+            <div class="form-group" >
+                <input  type="text" name =" name" id ="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input  type="email" name =" email" id ="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input  type="number" name ="phone " id ="phone" placeholder="Enter your phone no:">
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" cols="30" rows="10"></textarea> 
+            </div>
+            <div class="">
+              <input name="button" class="btn" placeholder="Send" style="height:10px;width:100px;" onclick="contact()"></textarea> 
+
+            </div>
+            <p id="result"></p>
+        </form>
+         </div>
+
+     </section>
+     <script type="text/javascript" src="myscript.js"></script>
+ </Body>
